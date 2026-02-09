@@ -54,6 +54,8 @@ const Register = () => {
       } else if (data?.errors) {
         const messages = Object.values(data.errors).join(', ');
         setError(messages);
+      } else if (!err.response) {
+        setError('Cannot connect to server. Please make sure the backend is running.');
       } else {
         setError('Registration failed. Please try again.');
       }
@@ -64,9 +66,9 @@ const Register = () => {
 
   return (
     <div className="auth-container">
+      <h1 className="auth-logo">HealthGate</h1>
       <div className="auth-card">
         <div className="auth-header">
-          <h1 className="auth-logo">🏥 HealthGate</h1>
           <h2>Create Account</h2>
           <p>Register to get started</p>
         </div>
@@ -75,31 +77,29 @@ const Register = () => {
         {success && <div className="alert alert-success">{success}</div>}
 
         <form onSubmit={handleSubmit} className="auth-form">
-          <div className="form-row">
-            <div className="form-group">
-              <label htmlFor="firstName">First Name</label>
-              <input
-                type="text"
-                id="firstName"
-                name="firstName"
-                value={formData.firstName}
-                onChange={handleChange}
-                placeholder="Enter first name"
-                required
-              />
-            </div>
-            <div className="form-group">
-              <label htmlFor="lastName">Last Name</label>
-              <input
-                type="text"
-                id="lastName"
-                name="lastName"
-                value={formData.lastName}
-                onChange={handleChange}
-                placeholder="Enter last name"
-                required
-              />
-            </div>
+          <div className="form-group">
+            <label htmlFor="firstName">First Name</label>
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              value={formData.firstName}
+              onChange={handleChange}
+              placeholder="Enter first name"
+              required
+            />
+          </div>
+          <div className="form-group">
+            <label htmlFor="lastName">Last Name</label>
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              value={formData.lastName}
+              onChange={handleChange}
+              placeholder="Enter last name"
+              required
+            />
           </div>
 
           <div className="form-group">

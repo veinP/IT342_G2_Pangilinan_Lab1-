@@ -38,9 +38,9 @@ const Login = () => {
 
   return (
     <div className="auth-container">
+      <h1 className="auth-logo">HealthGate</h1>
       <div className="auth-card">
         <div className="auth-header">
-          <h1 className="auth-logo">🏥 HealthGate</h1>
           <h2>Welcome Back</h2>
           <p>Login to your account</p>
         </div>

@@ -10,6 +10,7 @@ const Dashboard = () => {
   const [profile, setProfile] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
+  const [showLogoutConfirm, setShowLogoutConfirm] = useState(false);
 
   useEffect(() => {
     fetchProfile();
@@ -26,7 +27,11 @@ const Dashboard = () => {
     }
   };
 
-  const handleLogout = async () => {
+  const handleLogoutClick = () => {
+    setShowLogoutConfirm(true);
+  };
+
+  const handleLogoutConfirm = async () => {
     try {
       await authAPI.logout();
     } catch (err) {
@@ -34,6 +39,10 @@ const Dashboard = () => {
     }
     logout();
     navigate('/login');
+  };
+
+  const handleLogoutCancel = () => {
+    setShowLogoutConfirm(false);
   };
 
   if (loading) {
@@ -48,13 +57,13 @@ const Dashboard = () => {
     <div className="dashboard-container">
       <nav className="dashboard-nav">
         <div className="nav-brand">
-          <h1>🏥 HealthGate</h1>
+          <h1>HealthGate</h1>
         </div>
         <div className="nav-actions">
           <span className="nav-user">
             Welcome, {user?.firstName || profile?.firstName || 'User'}!
           </span>
-          <button onClick={handleLogout} className="btn btn-logout">
+          <button onClick={handleLogoutClick} className="btn btn-logout">
             Logout
           </button>
         </div>
@@ -116,6 +125,23 @@ const Dashboard = () => {
           </div>
         </div>
       </main>
+
+      {showLogoutConfirm && (
+        <div className="logout-overlay" onClick={handleLogoutCancel}>
+          <div className="logout-card" onClick={(e) => e.stopPropagation()}>
+            <h3>Confirm Logout</h3>
+            <p>Are you sure you want to log out?</p>
+            <div className="logout-actions">
+              <button onClick={handleLogoutCancel} className="btn btn-cancel">
+                Cancel
+              </button>
+              <button onClick={handleLogoutConfirm} className="btn btn-confirm-logout">
+                Logout
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
