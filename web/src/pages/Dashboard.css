@@ -1,0 +1,155 @@
+.dashboard-container {
+  min-height: 100vh;
+  background: #f0f2f5;
+}
+
+.dashboard-nav {
+  background: linear-gradient(135deg, #0f4c75, #1b262c);
+  padding: 0 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.nav-brand h1 {
+  color: white;
+  font-size: 22px;
+  margin: 0;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-user {
+  color: #bbe1fa;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.btn-logout {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 8px 20px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-logout:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.dashboard-main {
+  padding: 32px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.dashboard-content h2 {
+  font-size: 28px;
+  color: #1b262c;
+  margin-bottom: 24px;
+}
+
+.profile-card {
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.profile-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0f4c75, #3282b8);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 auto 20px;
+  letter-spacing: 2px;
+}
+
+.profile-card h3 {
+  font-size: 20px;
+  color: #1b262c;
+  margin-bottom: 24px;
+}
+
+.profile-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  text-align: left;
+}
+
+.profile-field {
+  padding: 16px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  border: 1px solid #e9ecef;
+}
+
+.profile-field label {
+  display: block;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #888;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.profile-field p {
+  font-size: 15px;
+  color: #1b262c;
+  font-weight: 500;
+  margin: 0;
+  word-break: break-word;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  font-size: 18px;
+  color: #666;
+}
+
+@media (max-width: 600px) {
+  .dashboard-nav {
+    padding: 0 16px;
+  }
+
+  .dashboard-main {
+    padding: 16px;
+  }
+
+  .profile-details {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-card {
+    padding: 24px;
+  }
+
+  .nav-user {
+    display: none;
+  }
+}
