@@ -4,25 +4,25 @@
 
 | Task | Description | Commit Hash |
 |------|-------------|-------------|
-| Backend Setup | Spring Boot project with MySQL, JPA, Security, JWT dependencies | `<add-commit-hash>` |
-| User Entity | Created User model with JPA annotations matching ERD | `<add-commit-hash>` |
-| User Repository | Created JPA repository with findByEmail and existsByEmail | `<add-commit-hash>` |
-| DTOs | Created RegisterRequest, LoginRequest, LoginResponse, ApiResponse | `<add-commit-hash>` |
-| JWT Provider | JWT token generation, validation, and extraction utility | `<add-commit-hash>` |
-| JWT Auth Filter | Request filter to validate JWT tokens on protected routes | `<add-commit-hash>` |
-| Security Config | Spring Security config with BCrypt, CORS, stateless sessions | `<add-commit-hash>` |
-| Auth Service | Business logic for register, login, logout, getCurrentUser | `<add-commit-hash>` |
-| Auth Controller | POST /api/auth/register, POST /api/auth/login, POST /api/auth/logout | `<add-commit-hash>` |
-| User Controller | GET /api/user/me (protected endpoint) | `<add-commit-hash>` |
-| Password Encryption | BCrypt password hashing for secure storage | `<add-commit-hash>` |
-| React Web App Setup | Vite + React project with axios, react-router-dom | `<add-commit-hash>` |
-| Register Page | Registration form with validation and API integration | `<add-commit-hash>` |
-| Login Page | Login form with JWT token storage | `<add-commit-hash>` |
-| Dashboard/Profile Page | Protected page displaying user profile information | `<add-commit-hash>` |
-| Logout Functionality | Token invalidation and redirect to login | `<add-commit-hash>` |
-| Auth Context | React context for global auth state management | `<add-commit-hash>` |
-| Protected Route | Route guard component for authenticated-only pages | `<add-commit-hash>` |
-| API Service | Axios instance with interceptors for JWT auth | `<add-commit-hash>` |
+| Backend Setup | Spring Boot project with MySQL, JPA, Security, JWT dependencies | `94967c7` |
+| User Entity | Created User model with JPA annotations matching ERD | `1fe833f` |
+| User Repository | Created JPA repository with findByEmail and existsByEmail | `9c04ad4` |
+| DTOs | Created RegisterRequest, LoginRequest, LoginResponse, ApiResponse | `a0e46cf` |
+| JWT Provider | JWT token generation, validation, and extraction utility | `2e80179` |
+| JWT Auth Filter | Request filter to validate JWT tokens on protected routes | `6d89160` |
+| Security Config | Spring Security config with BCrypt, CORS, stateless sessions | `6a72f65` |
+| Auth Service | Business logic for register, login, logout, getCurrentUser | `132c835` |
+| Auth Controller | POST /api/auth/register, POST /api/auth/login, POST /api/auth/logout | `482f503` |
+| User Controller | GET /api/user/me (protected endpoint) | `a521c60` |
+| Password Encryption | BCrypt password hashing for secure storage | `b1da0eb` |
+| React Web App Setup | Vite + React project with axios, react-router-dom | `d5f817a` |
+| Register Page | Registration form with validation and API integration | `c43a2be` |
+| Login Page | Login form with JWT token storage | `9a11f7e` |
+| Dashboard/Profile Page | Protected page displaying user profile information | `9610381` |
+| Logout Functionality | Token invalidation and redirect to login | `b122776` |
+| Auth Context | React context for global auth state management | `b122776` |
+| Protected Route | Route guard component for authenticated-only pages | `82f5c10` |
+| API Service | Axios instance with interceptors for JWT auth | `b9f06e1` |
 
 ## IN-PROGRESS
 
