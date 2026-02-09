@@ -47,7 +47,7 @@ const Login = () => {
 
         {error && <div className="alert alert-error">{error}</div>}
 
-        <form onSubmit={handleSubmit} className="auth-form">
+        <form onSubmit={handleSubmit} className="auth-form" autoComplete="off">
           <div className="form-group">
             <label htmlFor="email">Email</label>
             <input
@@ -57,7 +57,7 @@ const Login = () => {
               value={formData.email}
               onChange={handleChange}
               placeholder="Enter your email"
-              autoComplete="off"
+              autoComplete="new-email"
               required
             />
           </div>
@@ -71,7 +71,7 @@ const Login = () => {
               value={formData.password}
               onChange={handleChange}
               placeholder="Enter your password"
-              autoComplete="off"
+              autoComplete="new-password"
               required
             />
           </div>
