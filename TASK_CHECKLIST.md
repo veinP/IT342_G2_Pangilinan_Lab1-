@@ -23,12 +23,13 @@
 | Auth Context | React context for global auth state management | `b122776` |
 | Protected Route | Route guard component for authenticated-only pages | `82f5c10` |
 | API Service | Axios instance with interceptors for JWT auth | `b9f06e1` |
+| UI Color Scheme | Unified color palette (#7C94B8, #2A4D87, #D9D9D7, #B1BBC7) across all pages | `112f6ec` |
+| Logout Confirmation | Modal card with confirm/cancel before logging out | `112f6ec` |
+| Documentation | FRS PDF with ERD, UML diagrams, and Web UI screenshots | — |
 
 ## IN-PROGRESS
 
-| Task | Description |
-|------|-------------|
-| Documentation | FRS PDF with ERD, UML diagrams, and Web UI screenshots |
+_No tasks in progress._
 
 ## TODO
 
