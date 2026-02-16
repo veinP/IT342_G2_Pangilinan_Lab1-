@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Card background: #D9D9D7, rounded 16dp matching web .auth-card / .profile-card -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/hg_card" />
+    <corners android:radius="16dp" />
+</shape>
