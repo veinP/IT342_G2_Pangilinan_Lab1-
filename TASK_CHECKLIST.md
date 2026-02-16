@@ -26,6 +26,18 @@
 | UI Color Scheme | Unified color palette (#7C94B8, #2A4D87, #D9D9D7, #B1BBC7) across all pages | `112f6ec` |
 | Logout Confirmation | Modal card with confirm/cancel before logging out | `112f6ec` |
 | Documentation | FRS PDF with ERD, UML diagrams, and Web UI screenshots | `512bee6` |
+| Mobile Project Setup | Android Kotlin project with OkHttp, Gson, Material dependencies | `34f0a79` |
+| Mobile Color Scheme | HealthGate blue palette (#2A4D87, #7C94B8) matching web UI | `9415839` |
+| Mobile Drawable Resources | Custom backgrounds, buttons, gradients, eye toggle icons | `a7553e1` |
+| Mobile Session Manager | SharedPreferences-based JWT token and email storage | `1132047` |
+| Mobile API Client | OkHttp singleton with login, register, profile, logout endpoints | `bee6554` |
+| Mobile Splash Screen | Auto-redirect to Dashboard (logged in) or Login (logged out) | `28c7605` |
+| Mobile Login Screen | Email/password form with validation, password toggle, API integration | `379dee6` |
+| Mobile Register Screen | First/last name, email, password/confirm form with validation | `d5b862b` |
+| Mobile Dashboard Screen | Welcome banner, account details cards, navbar navigation | `b4fac9e` |
+| Mobile Profile Screen | Avatar initials, profile info panels, navbar navigation | `b27cf20` |
+| Mobile Logout | Confirmation dialog with API call and session clearing | `b4fac9e` |
+| Mobile Protected Routes | Dashboard/Profile redirect to Login when no token present | `b4fac9e` |
 
 ## IN-PROGRESS
 
@@ -35,7 +47,4 @@ _No tasks in progress._
 
 | Task | Description |
 |------|-------------|
-| Mobile App (React Native) | Register, Login, Dashboard, Logout screens |
-| Mobile API Integration | Connect mobile app to Spring Boot backend |
 | FRS Update - Mobile Screenshots | Add mobile UI screenshots to FRS document |
-| Deployment | Deploy backend and web app to production |
