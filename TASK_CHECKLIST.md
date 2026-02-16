@@ -47,4 +47,4 @@ _No tasks in progress._
 
 | Task | Description |
 |------|-------------|
-| FRS Update - Mobile Screenshots | Add mobile UI screenshots to FRS document |
+|------|-------------|
