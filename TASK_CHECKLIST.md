@@ -38,6 +38,8 @@
 | Mobile Profile Screen | Avatar initials, profile info panels, navbar navigation | `b27cf20` |
 | Mobile Logout | Confirmation dialog with API call and session clearing | `b4fac9e` |
 | Mobile Protected Routes | Dashboard/Profile redirect to Login when no token present | `b4fac9e` |
+| FRS Update - Mobile Screenshots | Add mobile UI screenshots to FRS document | `d2f139c` |
+
 
 ## IN-PROGRESS
 
@@ -47,4 +49,4 @@ _No tasks in progress._
 
 | Task | Description |
 |------|-------------|
-| FRS Update - Mobile Screenshots | Add mobile UI screenshots to FRS document |
+|------|-------------|
