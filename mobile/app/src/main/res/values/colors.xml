@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- HealthGate exact web colors -->
+    <color name="hg_navy">#2A4D87</color>        <!-- navbar, text, headings, avatar bg -->
+    <color name="hg_steel">#7C94B8</color>       <!-- page backgrounds, primary buttons -->
+    <color name="hg_steel_hover">#6A829F</color> <!-- button hover / pressed state -->
+    <color name="hg_card">#D9D9D7</color>        <!-- cards, auth card, logout card -->
+    <color name="hg_input">#B1BBC7</color>       <!-- inputs, profile fields, cancel btn -->
+    <color name="hg_input_hover">#9FAAB6</color> <!-- cancel button hover -->
+
+    <!-- Legacy colors (used by profile layout) -->
+    <color name="gray_50">#FFF9FAFB</color>
+    <color name="gray_300">#FFD1D5DB</color>
+    <color name="gray_400">#FF9CA3AF</color>
+    <color name="gray_500">#FF6B7280</color>
+    <color name="gray_700">#FF374151</color>
+    <color name="gray_800">#FF1F2937</color>
+    <color name="hg_blue_100">#FFDBEAFE</color>
+    <color name="hg_blue_600">#FF2563EB</color>
+    <color name="red_600">#FFDC2626</color>
+    <color name="red_700">#FFB91C1C</color>
+    <color name="green_700">#FF15803D</color>
+
+    <!-- Alert colors (from web) -->
+    <color name="red_error_bg">#FFEEF0</color>
+    <color name="red_error_text">#D32F2F</color>
+    <color name="red_error_border">#FFCDD2</color>
+    <color name="green_success_bg">#E8F5E9</color>
+    <color name="green_success_text">#2E7D32</color>
+    <color name="green_success_border">#C8E6C9</color>
+</resources>

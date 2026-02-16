@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme matching HealthGate web -->
+    <style name="Base.Theme.Healthgate" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/hg_navy</item>
+        <item name="colorPrimaryDark">@color/hg_navy</item>
+        <item name="colorAccent">@color/hg_steel</item>
+        <item name="android:statusBarColor">@color/hg_navy</item>
+        <item name="android:navigationBarColor">@color/hg_navy</item>
+        <item name="android:windowBackground">@color/hg_steel</item>
+    </style>
+
+    <style name="Theme.Healthgate" parent="Base.Theme.Healthgate" />
+</resources>
