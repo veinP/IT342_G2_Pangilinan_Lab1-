@@ -37,7 +37,7 @@
 | Mobile Dashboard Screen | Welcome banner, account details cards, navbar navigation | `b4fac9e` |
 | Mobile Profile Screen | Avatar initials, profile info panels, navbar navigation | `b27cf20` |
 | Mobile Logout | Confirmation dialog with API call and session clearing | `b4fac9e` |
-| Mobile Protected Routes | Dashboard/Profile redirect to Login when no token present | `b4fac9e` |
+| Mobile Protected Routes | Dashboard/Profile redirect to Login when no token present | `3a4058c` |
 
 ## IN-PROGRESS
 
